@@ -1,0 +1,45 @@
+body {
+    box-sizing: border-box;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.launch {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    h3 {
+        margin: 10px 0;
+        font-size: 1.2em;
+        color: #333;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+}
